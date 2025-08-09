@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Alertas de TradingView gratis… sin pagar Premium</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
     <style>
         :root {
             --primary: #0d9488;
@@ -68,7 +68,7 @@
             text-align: center;
             margin-top: 2rem;
         }
-        .cta a {
+        .cta a, .cta button {
             display: inline-block;
             background: var(--primary);
             color: white;
@@ -77,8 +77,12 @@
             border-radius: 10px;
             font-weight: 600;
             transition: background 0.3s ease, transform 0.2s ease;
+            border: none;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
         }
-        .cta a:hover {
+        .cta a:hover, .cta button:hover {
             background: var(--primary-dark);
             transform: translateY(-2px);
         }
@@ -88,6 +92,12 @@
             font-weight: 500;
             color: var(--primary-dark);
             text-decoration: none;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            background: none;
+            padding: 0;
+            border: none;
         }
         .cta-secondary:hover {
             text-decoration: underline;
@@ -114,6 +124,17 @@
             color: var(--gray);
         }
     </style>
+    <script>
+        function abrirTelegram() {
+            var usuario = "fernando_tlg_1980"; // Poné tu usuario sin @
+            // Intentar abrir app telegram
+            window.location.href = "tg://resolve?domain=" + usuario;
+            // Si no abre en 1 segundo, abrir web
+            setTimeout(function () {
+                window.location.href = "https://t.me/" + usuario;
+            }, 1000);
+        }
+    </script>
 </head>
 <body>
 
@@ -125,8 +146,8 @@
 <section>
     <h2>🛑 ¿Te quedaste sin alertas en TradingView gratis?</h2>
     <p>Desde hace unas semanas, TradingView ya no permite crear alertas en cuentas gratuitas.
-    Aunque tengas tus indicadores o los hayas programado en Pine Script, no podés configurarlos para que te avisen.
-    Esto significa <strong>o pagar el plan Premium… o quedarte sin notificaciones.</strong></p>
+        Aunque tengas tus indicadores o los hayas programado en Pine Script, no podés configurarlos para que te avisen.
+        Esto significa <strong>o pagar el plan Premium… o quedarte sin notificaciones.</strong></p>
 </section>
 
 <section>
@@ -177,8 +198,8 @@
     <p>En <strong>cuestión de días</strong> podés tener tu sistema funcionando.</p>
     <div class="cta">
         <a href="https://wa.me/+5493863531911" target="_blank">📞 Escribime por WhatsApp</a>
-        <br>
-        <a class="cta-secondary" href="https://t.me/@fernando_tlg_1980" target="_blank">📩 Enviame un mensaje en Telegram</a>
+        <br />
+        <button onclick="abrirTelegram()">📩 Enviame un mensaje en Telegram</button>
     </div>
 </section>
 
