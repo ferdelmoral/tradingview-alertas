@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alertas de TradingView gratis… sin pagar Premium</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <style>
+        :root {
+            --primary: #0d9488;
+            --primary-dark: #0f766e;
+            --bg: #f8fafc;
+            --text: #1e293b;
+            --gray: #64748b;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: #fff;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 800;
+        }
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem 1.5rem;
+            background: white;
+            margin-bottom: 2rem;
+            border-radius: 12px;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: var(--primary-dark);
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        h3 {
+            margin-top: 1.2rem;
+            color: var(--primary);
+        }
+        ul {
+            margin: 0;
+            padding-left: 1.2rem;
+        }
+        li {
+            margin-bottom: 0.4rem;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .cta a, .cta button {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.9rem 1.8rem;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: background 0.3s ease, transform 0.2s ease;
+            border: none;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+        }
+        .cta a:hover, .cta button:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+        .cta-secondary {
+            display: inline-block;
+            margin-top: 0.8rem;
+            font-weight: 500;
+            color: var(--primary-dark);
+            text-decoration: none;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            background: none;
+            padding: 0;
+            border: none;
+        }
+        .cta-secondary:hover {
+            text-decoration: underline;
+        }
+        blockquote {
+            font-style: italic;
+            background: #f1f5f9;
+            padding: 1rem;
+            border-left: 4px solid var(--primary);
+            margin: 1.5rem 0;
+            border-radius: 6px;
+        }
+        .example {
+            background: #f1f5f9;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            font-size: 0.95rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+    </style>
+    <script>
+        function abrirTelegram() {
+            var usuario = "fernando_tlg_1980"; // Poné tu usuario sin @
+            // Intentar abrir app telegram
+            window.location.href = "tg://resolve?domain=" + usuario;
+            // Si no abre en 1 segundo, abrir web
+            setTimeout(function () {
+                window.location.href = "https://t.me/" + usuario;
+            }, 1000);
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Alertas de TradingView gratis… sin pagar Premium</h1>
+    <p>Solución inmediata para seguir recibiendo tus alertas sin gastar en suscripciones.</p>
+</header>
+
+<section>
+    <h2>🛑 ¿Te quedaste sin alertas en TradingView gratis?</h2>
+    <p>Desde hace unas semanas, TradingView ya no permite crear alertas en cuentas gratuitas.
+        Aunque tengas tus indicadores o los hayas programado en Pine Script, no podés configurarlos para que te avisen.
+        Esto significa <strong>o pagar el plan Premium… o quedarte sin notificaciones.</strong></p>
+</section>
+
+<section>
+    <h2>✅ La solución: Bot de Python + Telegram</h2>
+    <p>Desarrollé un sistema que <strong>reproduce el funcionamiento de las alertas de TradingView</strong>, pero sin pagar la suscripción.</p>
+
+    <h3>¿Cómo funciona?</h3>
+    <ul>
+        <li>Programo tu indicador en Pine Script (o adapto el que ya tenés).</li>
+        <li>Lo conecto a un bot hecho en Python.</li>
+        <li>Cada vez que se cumple tu condición, recibís una <strong>notificación instantánea en Telegram</strong>.</li>
+    </ul>
+
+    <h3>Ventajas:</h3>
+    <ul>
+        <li>Funciona con cualquier indicador o estrategia.</li>
+        <li>Recibís alertas en tu celular, PC o smartwatch.</li>
+        <li>Totalmente personalizable.</li>
+        <li>Evitás pagar TradingView Premium.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>📌 Ejemplo real</h2>
+    <div class="example">
+        <p><strong>Gráfico en TradingView:</strong> indicador detecta señal de compra.</p>
+        <p><strong>Telegram:</strong> alerta automática “BTC/USDT – Señal de compra – 1H”.</p>
+        <!-- Aquí podés insertar una imagen o GIF -->
+    </div>
+</section>
+
+<section>
+    <h2>💬 Testimonio</h2>
+    <blockquote>
+        "Pensé que iba a tener que pagar TradingView Premium, pero con este bot sigo recibiendo mis alertas como antes. 
+        Además, ahora me llegan directo al celular con más información personalizada." – Melina Alderete | Cliente trader
+    </blockquote>
+</section>
+
+<section>
+    <h2>🚀 Recuperá tus alertas hoy mismo</h2>
+    <p>📩 Escribime por WhatsApp o Telegram con:</p>
+    <ul>
+        <li>Nombre del indicador.</li>
+        <li>Condición que querés que dispare la alerta.</li>
+        <li>Activos y temporalidades.</li>
+    </ul>
+    <p>En <strong>cuestión de días</strong> podés tener tu sistema funcionando.</p>
+    <div class="cta">
+        <a href="https://wa.me/+5493863531911" target="_blank">📞 Escribime por WhatsApp</a>
+        <br /><br />
+        <button onclick="abrirTelegram()">📩 Enviame un mensaje en Telegram</button>
+    </div>
+</section>
+
+<footer>
+    © 2025 Fernando Del Moral – Ingeniero en Sistemas, Soluciones de Automatización y Trading
+</footer>
+
+</body>
+</html>
